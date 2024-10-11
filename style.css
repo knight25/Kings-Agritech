@@ -46,7 +46,7 @@ nav ul li a {
     background-image: url('Assets/images/hero.jpg'); /* Replace with your background image path */
     background-size: cover; /* Ensure the image covers the entire section */
     background-position: center; /* Center the background image */
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
