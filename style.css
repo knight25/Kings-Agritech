@@ -199,7 +199,7 @@ nav ul li a {
 @media (max-width: 1024px) {
     .contact-container {
         flex-direction: column;
-       
+        text-align: center;
     }
 
     .contact-image img {
@@ -210,16 +210,6 @@ nav ul li a {
         margin-top: 1.5rem;
     }
 }
-
-@media (max-width: 768px) {
-    /* Make inputs wider on mobile view */
-    .form-group input, .form-group textarea {
-        width: 150%;  /* Make the input fields 90% of the container width */
-        margin: 0 auto; /* Center the input fields */
-    }
-}
-
-
 
 
 /* Footer Styles */
