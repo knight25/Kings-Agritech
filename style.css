@@ -19,7 +19,10 @@ header {
 
 header .logo img {
     height: 50px;
-    margin-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 nav ul {
