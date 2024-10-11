@@ -215,7 +215,7 @@ nav ul li a {
     /* Make inputs wider on mobile view */
     .form-group input, .form-group textarea {
         width: 150%;  /* Make the input fields 90% of the container width */
-        margin-right: 50px; /* Center the input fields */
+        margin: 0 auto; /* Center the input fields */
     }
 }
 
