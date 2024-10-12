@@ -11,17 +11,19 @@
 
     <!-- Header Section -->
     <header>
+    <nav class="navbar">
         <div class="logo">
-            <img src="Assets/images/logo.png" alt="Kings Agritech" style="border-radius: 30px">
-        </div><br>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+             <img src="Assets/images/logo.png" alt="logo">
+        </div>
+        <button class="dropdown-btn" onclick="toggleMenu()">Menu</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
     <!-- Hero Section -->
@@ -157,6 +159,13 @@
         <p>&copy; 2024 Kings Agritech. All rights reserved.</p>
         <p><a href="#about">About Us</a> | <a href="#contact">Contact</a></p>
     </footer>
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
 
 </body>
 </html>
