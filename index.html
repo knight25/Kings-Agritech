@@ -13,9 +13,13 @@
     <header>
     <nav class="navbar">
         <div class="logo">
-             <img src="Assets/images/logo.png" alt="logo">
+            <img src="Assets/images/logo.png" alt="logo">
         </div>
-        <button class="dropdown-btn" onclick="toggleMenu()">Menu</button>
+        <button class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -160,12 +164,26 @@
         <p><a href="#about">About Us</a> | <a href="#contact">Contact</a></p>
     </footer>
     
-    <script>
+      <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function() {
+            const navLinks = document.getElementById('nav-links');
+            const isOpen = navLinks.classList.contains('show');
+            
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop < lastScrollTop && isOpen) {
+                // User is scrolling up and dropdown is open
+                navLinks.classList.remove('show');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+
         function toggleMenu() {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.toggle('show');
         }
     </script>
-
+    
 </body>
 </html>
